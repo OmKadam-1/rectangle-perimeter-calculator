@@ -6,6 +6,39 @@
     <title>Perimeter</title>
 </head>
 <body>
-    
+    <div class="perimeter-card">
+        <h2 class="header">Perimeter & Area</h2>
+        <input type="text" id="num1" placeholder="Enter length"
+            style="width: 400px; border-radius: 25px; height: 30px; "><br><br><br>
+        <input type="text" id="num2" placeholder="Enter breadth"
+            style="width: 400px; border-radius: 25px; height: 30px;"><br><br><br>
+        <p id="result">""</p>
+        <div class="but-ton">
+            <button onclick="perimeter_rectangle()" class="button">Perimeter</button>&nbsp;&nbsp;&nbsp;
+            <button onclick="area_rectangle()" class="button">Area</button>
+            <button onclick="reset()" class="button">Reset</button>
+        </div>
+        </div>
+    </div>
+    <script>
+        function perimeter_rectangle() {
+            const length = parseFloat(document.getElementById("num1").value);
+            const breadth = parseFloat(document.getElementById("num2").value);
+            const result = document.getElementById("result");
+            const perimeter = 2 * (length + breadth);
+            result.innerText = `Perimeter is : ${perimeter}`;
+        }
+        function area_rectangle() {
+            const length = parseFloat(document.getElementById("num1").value);
+            const breadth = parseFloat(document.getElementById("num2").value);
+            const result = document.getElementById("result");
+            const area = length * breadth;
+            result.innerText = `Area is : ${area}`;
+        }
+        function reset(){
+             const result = document.getElementById("result");
+            result.innerText = ``;
+        }
+    </script>   
 </body>
 </html>
