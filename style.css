@@ -1,0 +1,43 @@
+.header {
+        text-align: center;
+    }
+.perimeter-card {
+        height: 300px;
+        width: 400px;
+        background-color: bisque;
+        margin-left: 380px;
+        margin-top: 100px;
+        align-items: center;
+        padding: 80px;
+        border-radius: 25px;
+    }
+    #num1 {
+        cursor: pointer;
+    }
+
+    #num2 {
+        cursor: pointer;
+    }
+
+    .but-ton {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;   
+    }
+    .button{
+ height: 35px;
+ width: 100px;
+ margin-left: 20px;
+ border-radius: 20px;
+ padding: 5px 10px;
+ text-align: center;
+ background-color: greenyellow;
+ cursor: pointer;
+    }
+    @media screen and (max-width:768px) {
+        .perimeter-card {
+            width: 80%;
+            margin: 50px auto;
+            padding: 50px;
+        }
+    }
